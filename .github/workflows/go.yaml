@@ -27,7 +27,7 @@ jobs:
           GOOS=darwin GOARCH=amd64 go build -o staging/ww.darwin-amd64 ./cmd/ww
           GOOS=darwin GOARCH=arm64 go build -o staging/ww.darwin-arm64 ./cmd/ww
       - name: Publish binaries to GitHub releases
-        if: ${{ github.ref == 'refs/heads/main' }}
+        if: ${{ github.ref == 'refs/heads/master' }}
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
