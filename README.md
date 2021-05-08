@@ -11,21 +11,21 @@ Binaries are built weekly and uploaded to [GitHub releases](https://github.com/p
 On Linux, you can install them like so:
 
 ```shell
-$ curl -L -o /tmp/ww https://github.com/pojntfx/bofied/releases/download/latest/ww.linux-$(uname -m)
+$ curl -L -o /tmp/ww https://github.com/pojntfx/webwormhole-binaries/releases/download/latest/ww.linux-$(uname -m)
 $ sudo install /tmp/ww /usr/local/bin
 ```
 
 On macOS, you can use the following to install:
 
 ```shell
-$ curl -L -o /tmp/ww https://github.com/pojntfx/bofied/releases/download/latest/ww.darwin-$(uname -m)
+$ curl -L -o /tmp/ww https://github.com/pojntfx/webwormhole-binaries/releases/download/latest/ww.darwin-$(uname -m)
 $ sudo install /tmp/ww /usr/local/bin
 ```
 
 On Windows, the following should work:
 
 ```shell
-Invoke-WebRequest https://github.com/pojntfx/bofied/releases/download/latest/ww.windows-x86_64.exe -OutFile \Windows\System32\ww.exe
+Invoke-WebRequest https://github.com/pojntfx/webwormhole-binaries/releases/download/latest/ww.windows-x86_64.exe -OutFile \Windows\System32\ww.exe
 ```
 
 ## License
