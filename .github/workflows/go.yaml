@@ -21,11 +21,11 @@ jobs:
           git clone https://github.com/saljam/webwormhole.git upstream
           cd upstream
 
-          GOOS=linux GOARCH=amd64 go build -o ../staging/ww.linux-amd64 ./cmd/ww
-          GOOS=linux GOARCH=arm64 go build -o ../staging//ww.linux-arm64 ./cmd/ww
-          GOOS=linux GOARCH=arm go build -o ../staging//ww.linux-arm ./cmd/ww
-          GOOS=windows GOARCH=amd64 go build -o ../staging/ww.windows-amd64.exe ./cmd/ww
-          GOOS=darwin GOARCH=amd64 go build -o ../staging/ww.darwin-amd64 ./cmd/ww
+          GOOS=linux GOARCH=amd64 go build -o ../staging/ww.linux-x86_64 ./cmd/ww
+          GOOS=linux GOARCH=arm64 go build -o ../staging//ww.linux-aarch64 ./cmd/ww
+          GOOS=linux GOARCH=arm go build -o ../staging//ww.linux-armv7l ./cmd/ww
+          GOOS=windows GOARCH=amd64 go build -o ../staging/ww.windows-x86_64.exe ./cmd/ww
+          GOOS=darwin GOARCH=amd64 go build -o ../staging/ww.darwin-x86_64 ./cmd/ww
           GOOS=darwin GOARCH=arm64 go build -o ../staging/ww.darwin-arm64 ./cmd/ww
       - name: Publish binaries to GitHub releases
         if: ${{ github.ref == 'refs/heads/master' }}
