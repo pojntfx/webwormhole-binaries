@@ -22,10 +22,10 @@ $ curl -L -o /tmp/ww https://github.com/pojntfx/webwormhole-binaries/releases/do
 $ sudo install /tmp/ww /usr/local/bin
 ```
 
-On Windows, the following should work:
+On Windows, the following should work (using PowerShell as administrator):
 
 ```shell
-Invoke-WebRequest https://github.com/pojntfx/webwormhole-binaries/releases/download/latest/ww.windows-x86_64.exe -OutFile \Windows\System32\ww.exe
+PS> Invoke-WebRequest https://github.com/pojntfx/webwormhole-binaries/releases/download/latest/ww.windows-x86_64.exe -OutFile \Windows\System32\ww.exe
 ```
 
 ## License
