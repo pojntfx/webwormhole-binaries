@@ -28,7 +28,7 @@ On Windows, the following should work (using PowerShell as administrator):
 PS> Invoke-WebRequest https://github.com/pojntfx/webwormhole-binaries/releases/download/latest/ww.windows-x86_64.exe -OutFile \Windows\System32\ww.exe
 ```
 
-You can find binaries for more platforms on [GitHub releases](https://github.com/pojntfx/webwormhole-binaries/releases).
+You can find binaries for more operating systems and architectures on [GitHub releases](https://github.com/pojntfx/webwormhole-binaries/releases).
 
 ## License
 
