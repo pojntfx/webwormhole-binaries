@@ -9,7 +9,7 @@ curl -L -o /tmp/bagop "https://github.com/pojntfx/bagop/releases/latest/download
 install /tmp/bagop /usr/local/bin
 
 # Build release
-bagop -j "$(nproc)" -b ww -x '(android/*|ios/*|openbsd/mips64|js/wasm)' ./cmd/ww
+CGO_ENABLED=0 GO386=softfloat bagop -b ww -x '(android/*|ios/*|openbsd/mips64|js/wasm)' -p "go build -a -ldflags '-extldflags \"-static\"' -o \$DST ./cmd/ww"
 
 # Stage binaries
 cd ..
