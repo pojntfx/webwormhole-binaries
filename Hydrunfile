@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Clone upstream
+git clone https://github.com/saljam/webwormhole.git upstream
+cd upstream
+
+# Install bagop
+curl -L -o /tmp/bagop "https://github.com/pojntfx/bagop/releases/latest/download/bagop.linux-$(uname -m)"
+install /tmp/bagop /usr/local/bin
+
+# Build release
+bagop -j "$(nproc)" -b bagop -x '(android/*|ios/*|openbsd/mips64|js/wasm)' ./cmd/ww
+
+# Stage binaries
+cd ..
+mv upstream/out .

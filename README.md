@@ -2,7 +2,7 @@
 
 Weekly builds of [https://github.com/saljam/webwormhole](https://github.com/saljam/webwormhole).
 
-![Go CI](https://github.com/pojntfx/webwormhole-binaries/workflows/Go%20CI/badge.svg)
+![hydrun CI](https://github.com/pojntfx/webwormhole-binaries/workflows/hydrun%20CI/badge.svg)
 
 ## Installation
 
@@ -27,6 +27,8 @@ On Windows, the following should work (using PowerShell as administrator):
 ```shell
 PS> Invoke-WebRequest https://github.com/pojntfx/webwormhole-binaries/releases/download/latest/ww.windows-x86_64.exe -OutFile \Windows\System32\ww.exe
 ```
+
+You can find binaries for more platforms on [GitHub releases](https://github.com/pojntfx/webwormhole-binaries/releases).
 
 ## License
 
